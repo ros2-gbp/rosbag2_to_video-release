@@ -1,0 +1,12 @@
+Source: ros-kilted-rosbag2-to-video
+Section: misc
+Priority: optional
+Maintainer: Błażej Sowa <blazej@fictionlab.pl>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-kilted-ament-copyright <!nocheck>, ros-kilted-ament-flake8 <!nocheck>, ros-kilted-ament-mypy <!nocheck>, ros-kilted-ament-pep257 <!nocheck>, ros-kilted-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-rosbag2-to-video
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, libopencv-dev, python3-opencv, ros-kilted-cv-bridge, ros-kilted-rclpy, ros-kilted-ros2bag, ros-kilted-rosbag2-py, ros-kilted-rosidl-runtime-py, ros-kilted-ros-workspace
+Description: Command line tool to create a video from a rosbag recording
